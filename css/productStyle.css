@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow: visible !important;
+    background-color: whitesmoke;
+    /* padding-right: 17px !important; */
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+#main {
+    background-color: #F4F5FA;
+}
+
+.product {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: rgb(58 53 65 / 85%);
+}
+
+.offcanvas {
+    width: 80px !important;
+}
+
+.offcanvas.offcanvas-start {
+    transform: none;
+    visibility: visible !important;
+}
+
+.offcanvas.show {
+    width: 300px !important;
+}
+
+.offcanvas-body {
+    overflow: hidden !important;
+}
+
+span {
+    display: none;
+}
+
+.darkBlue {
+    color: #277BC0;
+    font-weight: 500;
+}
+
+.show+#main {
+    margin-left: 300px;
+}
+.lLogo {
+    display: none;
+}
+
+.show .list-group-item .lLogo {
+    display: inline-block;
+}
+.show .list-group-item .nLogo{
+    display: none;
+}
+#main {
+    margin-left: 80px;
+    transition: .3s ease-in-out;
+}
+
+.show .list-group-item span {
+    display: inline-block;
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+.textGray {
+    color: rgb(96, 96, 96);
+}
+
+span :hover {
+    color: rgb(96, 96, 96);
+}
+
+.span {
+    display: inline;
+}
+.rowCard{
+    background-color: white;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0.25rem;
+    box-shadow: 0px 2px 10px rgba(58, 53, 65, 0.1);
+    }
+
+.bg1 :hover {
+    background: linear-gradient(270deg, #9FB4FF 0%, #C6A7FE 100%, #BDC6E4 100%);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.dash {
+    box-shadow: 0px 2px 10px rgba(58, 53, 65, 0.1);
+}
+
+.gift {
+    background: linear-gradient(219.09deg, #57C7FF 3.36%, #CD7FF2 94.96%);
+    box-shadow: 0px 2px 1px -1px rgba(58, 53, 65, 0.2), 0px 1px 1px rgba(58, 53, 65, 0.14), 0px 1px 3px rgba(58, 53, 65, 0.12);
+    border-radius: 5px;
+}
+
+.bag {
+    background: linear-gradient(210.8deg, #54F7D2 8.64%, #6F95F5 119.03%);
+    box-shadow: 0px 2px 1px -1px rgba(58, 53, 65, 0.2), 0px 1px 1px rgba(58, 53, 65, 0.14), 0px 1px 3px rgba(58, 53, 65, 0.12);
+    border-radius: 5px;
+}
+
+.shadow1 {
+    box-shadow: 0px 2px 10px rgba(58, 53, 65, 0.1);
+}
+
+.add {
+    font-weight: 600;
+    word-spacing: 0px;
+    padding: 10px 13px 10px 13px;
+    color: #1C3879;
+    box-shadow: 0px 4px 8px -4px rgba(39, 123, 192, 0.2);
+    border-radius: 5px;
+    border: 1px solid #1C3879;
+}
+
+.cancel {
+    border: 1px solid #1C3879;
+    box-shadow: 0px 4px 8px -4px rgba(39, 123, 192, 0.2);
+    border-radius: 5px;
+    color: #1C3879;
+
+}
+
+.text-darkblue {
+    color: #1C3879;
+}
+
+.bgRed {
+    background-color: #FF4C51;
+}
+
+.modal-content-width {
+    width: 390px;
+}
+
+.ad {
+    color: #FF4C51;
+    font-size: 16px;
+    font-weight: 500;
+    width: 356px;
+}
+
+
+.fs14Blue {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #277BC0;
+}
+
+.fs16Blue {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: #277BC0;
+}
+
+.f16Cgray {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: rgba(58, 53, 65, 0.68);
+}
+.cardText14 {
+    color: rgba(58, 53, 65, 0.68);
+    font-size: 14px;
+}
+.f14Cgray {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: rgba(58, 53, 65, 0.68);
+}
+
+.f12Cgray {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: rgb(58 53 65 / 85%);
+}
+
+.blueCircle1 {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)), #32BAFF;
+    border-radius: 16px;
+    font-size: 13px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.darkBlue2 {
+    border: 1px solid rgba(136, 148, 173, 0.5);
+    color: #1C3879
+}
+
+.sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.input__field {
+    height: 50px;
+}
+
+.input__label {
+    top: -10px;
+    bottom: 20px;
+    left: 20px;
+    height: 20px;
+    background-color: white;
+}
+
+.bg-blue {
+    background-color: #277BC0;
+}
+.search-offcanvas + .show{
+width: 500px;
+}
+@media (max-width: 576px){ 
+
+    .row .border-4{
+        border: none;
+    }
+    a.btn.add {
+        font-size: 10px;
+    }
+    button.btn.fs-5 {
+        font-size: 10px;
+    }
+    span.span.text-uppercase.f12Cgray.fw-600 {
+        font-size: 10px;
+    }
+ }

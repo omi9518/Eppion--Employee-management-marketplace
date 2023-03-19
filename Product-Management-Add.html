@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0f5e0b9fad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/addStyle.css">
+    <title>Add !</title>
+</head>
+
+<body>
+    <!-- sidebar start -->
+    <div class="offcanvas offcanvas-start border-0" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+            <div class="dropdown text-center">
+                <ul class="list-group list-group-flush justify-content-center my-4">
+                    <li class="list-group-item border-0  mb-2 rounded">
+                        <img class="nLogo show" src="./imgs/small logo .svg" alt="">
+                    </li>
+                    <li class="list-group-item border-0  mb-2 rounded">
+                        <img class="lLogo show" src="./imgs/eppione-mp-logo 1.svg" alt="">
+                    </li>
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center" href="./Dashboard.html" role="button">
+                            <i class="bi bi-grid  textGray fs-5 me-2"></i>
+                            <span class=" fw-normal textGray">Dashboards</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center" href="./Products.html" role="button">
+                            <i class="bi bi-gift textGray fs-5 me-2"></i><span class="fw-normal textGray">Products
+                                Management</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center" href="#" role="button">
+                            <i class="bi bi-shop-window textGray fs-5 me-2"></i><span
+                                class=" fw-normal textGray">Provider Management</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center" href="#" role="button">
+                            <i class="bi bi-list-task textGray fs-5 me-2"></i><span class=" fw-normal textGray">Category
+                                Management</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a href="" class="btn border-0  d-flex align-items-center" href="" role="button">
+                            <i class="bi bi-list-nested textGray fs-5 me-2"></i><span class=" fw-normal textGray">Sub
+                                Category Management</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- sidebar end -->
+    <div id="main" class="p-3">
+
+        <!-- navbar start-->
+        <nav class="navbar mb-3 navbar-expand-lg navbar-light">
+            <div class="container-fluid px-0">
+                <div class="d-flex justify-content-end align-items-center text-center">
+                    <a class="btn border-0 fs-4 bg-white shadow1" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        role="button" aria-controls="offcanvasExample">
+                        <i class="bi bi-text-indent-right"></i>
+                    </a>
+                    <div class="d-flex justify-content-between">
+                        <div class="text-primary text-uppercase px-3">PRODUCT MANAGEMENT</div>
+                        <div class="text-uppercase border-start border-3 px-3">ADD PRODUCT</div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end align-items-center text-center">
+                    <div class="me-4">
+                        <a class="btn border-0 fs-4 bg-white shadow1" href="#">
+                            <i class="bi bi-lock"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a class="btn border-0 fs-4 bg-white shadow1" href="./index.html">
+                            <i class="bi bi-power"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+            <hr>
+       
+            <!-- navbar end -->
+       
+            <div class="wrapper bg-white rounded py-3">
+                <div class="row">
+                    <div class="col-12">
+                        <i class="bi bi-gift fs-5 ms-3"></i>
+                        <span class="span ms-3 f14Cgray">ADD PRODUCTS</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <div class="row m26">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center">
+                                <i class="bi bi-credit-card-2-front fs14Blue fs-4 me-2"></i>
+                            <span class="span text-uppercase fs14Blue me-4">details</span>
+                            <hr class="fs14Blue w-100">
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label class="f12Cgray position-absolute add">Product Name</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label class=" f12Cgray position-absolute add">Catagory</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label class="  f12Cgray position-absolute add">Sub Catagory</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label class="f12Cgray position-absolute add">Country</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="col-5 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">Add Image / Add
+                                Video</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="col-2 rounded text-center">
+                            <button type="button" class="btn file text-uppercase ">Choose file</button>
+                        </div>
+                        <div class="col-1 text-end">
+                            <a class="btn border-0 fs-4 bg-white shadow1" href="#">
+                                <i class="bi bi-plus-square-dotted"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row align-items-center m26">
+                        <div class="col-4">
+                            <form>
+                                <div class="form-group">
+                                    <input type="checkbox" id="html">
+                                    <label for="html" class="f14Cgray">Promoted</label>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-5 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">Upload Banner
+                                Image</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="col-2 rounded text-center">
+                            <button type="button" class="btn file text-uppercase">Choose file</button>
+                        </div>
+                        <div class="col-1">
+
+                        </div>
+                    </div>
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label class="f12Cgray position-absolute add">Benifit Type</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="col-5 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">File
+                                Upload</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="col-2 rounded text-center">
+                            <button type="button" class="btn file text-uppercase">Choose file</button>
+                        </div>
+                        <div class="col-1 text-end">
+                            <a class="btn border-0 fs-4 bg-white shadow1" href="#">
+                                <i class="bi bi-plus-square-dotted"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center m26">
+                        <div class="col-12 d-flex fs14Blue align-items-center">
+                            <i class="bi bi-coin fs14Blue fs-4 me-2"></i>
+                            <span class="span text-uppercase fs14Blue me-4">Pricing</span>
+                            <hr class="fs14Blue w-100">
+                        </div>
+                    </div>
+
+                    <div class="d-flex p-0 align-items-center">
+                        <div class="col-4 d-flex p-0">
+                            <p class="m-0 w-50">
+                                <input type="radio" id="test1" name="radio-group" checked="">
+                                <label for="test1" class="f14Cgray">Off the shelf</label>
+                            </p>
+                            <p class="m-0  w-50">
+                                <input type="radio" id="test2" name="radio-group">
+                                <label for="test2" class="f14Cgray">Brokered</label>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label class="f12Cgray position-absolute add">Benifit Type</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label class="  f12Cgray position-absolute add">Pricing Option</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label class="  f12Cgray position-absolute add">Currency</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label class="f12Cgray position-absolute add">Price Per Unit</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label class="  f12Cgray position-absolute add">Frequency</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label class="  f12Cgray position-absolute add">Level</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center m26">
+                        <div class="col-5 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">Upload Banner
+                                Image</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="col-2 rounded text-center">
+                            <button type="button" class="btn file text-uppercase">Choose file</button>
+                        </div>
+                        <div class="col-1 text-end">
+                            <a class="btn border-0 fs-4 bg-white Shadow1" href="#">
+                                <i class="bi bi-plus-square-dotted"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex align-items-center darkBlue m26">
+                        <div class="col-12 d-flex align-items-center">
+                            <i class="bi bi-person-lines-fill fs14Blue fs-4 me-2"></i>
+                            <span class="span text-uppercase fs14Blue me-4">provider</span>
+                            <hr class="fs14Blue w-100">
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label class="  f12Cgray position-absolute add">Provider Name</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected></option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">Contact
+                                Person</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="col-4 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">Email ID</label>
+                            <input type="email" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                    </div>
+                    <div class="row align-items-center m26">
+                        <div class="col-4 position-relative">
+                            <label for="formGroupExampleInput" class="f12Cgray position-absolute add">Contact</label>
+                            <input type="tel" class="form-control" id="formGroupExampleInput" placeholder="">
+                        </div>
+                        <div class="col-8 text-end">
+                            <button type="button" class="btn cancel me-3 darkBlue shadow1" data-bs-dismiss="offcanvas"
+                                aria-label="Close">CANCEL</button>
+                            <button type="button" class="btn bg-blue text-white shadow1">SAVE CHANGES</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

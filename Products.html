@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0f5e0b9fad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/productStyle.css">
+    <title>Products !</title>
+</head>
+
+<body>
+    <!-- sidebar start -->
+    <div class="offcanvas offcanvas-start border-0" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+            <div class="dropdown text-center">
+                <ul class="list-group list-group-flush justify-content-center my-4">
+                    <li class="list-group-item border-0  mb-2 rounded">
+                        <img class="nLogo show" src="./imgs/small logo .svg" alt="">
+                    </li>
+                    <li class="list-group-item border-0  mb-2 rounded">
+                        <img class="lLogo" src="./imgs/eppione-mp-logo 1.svg" alt="">
+                    </li>
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center" href="./Dashboard.html" role="button">
+                            <i class="bi bi-grid  fs-5 me-2"></i>
+                            <span class=" fw-normal">Dashboards</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center textGray" href="#" role="button">
+                            <i class="bi bi-gift fs-5 me-2"></i><span class="fw-normal">Products
+                                Management</span>
+
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center textGray" href="#" role="button">
+                            <i class="bi bi-shop-window fs-5 me-2"></i><span class=" fw-normal">Provider
+                                Management</span>
+
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a class="btn border-0  d-flex align-items-center textGray" href="#" role="button">
+                            <i class="bi bi-list-task fs-5 me-2"></i><span class=" fw-normal">Category
+                                Management</span>
+                        </a>
+                    </li>
+
+                    <li class="list-group-item border-0 bg1 mb-2 rounded">
+                        <a href="" class="btn border-0  d-flex align-items-center textGray" href="" role="button">
+                            <i class="bi bi-list-nested fs-5 me-2"></i><span class=" fw-normal">Sub
+                                Category Management</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="p-3">
+
+        <!-- navbar start-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-end align-items-center text-center">
+                    <a class="btn border-0 fs-4 bg-white shadow1" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                        role="button" aria-controls="offcanvasExample">
+                        <i class="bi bi-text-indent-right"></i>
+                    </a>
+                    <div>
+                        <span class="span ms-3">PRODUCT MANAGEMENT</span>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end align-items-center text-center">
+                    <div class="me-4">
+                        <a class="btn border-0 fs-4 bg-white shadow1" href="#">
+                            <i class="bi bi-lock"></i>
+                        </a>
+                    </div>
+                    <div class="">
+                        <a class="btn border-0 fs-4 bg-white shadow1" href="./index.html">
+                            <i class="bi bi-power"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- table start -->
+        <div class="container-fluid">
+            <hr>
+            <div class="row rowCard">
+                <div class="d-flex justify-content-end p-3 align-items-center">
+                    <div class="col-4">
+                                <i class="bi bi-grid-3x3 fs-5 "></i>
+                                <span class="span ms-3 product">PRODUCTS LIST</span>
+                    </div>
+                
+                <div class="offset-4 col-md-4">
+                            <div class="d-flex justify-content-end align-items-center">
+                                <div class="search me-md-4 shadow1 rounded">
+                                    <button class="btn bg-white fs-5" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                                            class="bi bi-search"></i></button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                        aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header mb-md-3">
+                                            <span class="span product">PRODUCT SEARCH</span>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="wrapper pb-5">
+                                                <div class="row">
+                                                    <div class="col-md-6 position-relative">
+                                                        <label class="input rounded w-100">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder="">
+                                                            <span
+                                                                class="span input__label position-absolute f12Cgray">Name</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6 position-relative">
+                                                        <label class="input rounded w-100">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label position-absolute f12Cgray">Provider
+                                                                Name</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-md-6 position-relative">
+                                                        <label class="input rounded w-100">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Benifit
+                                                                Type</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6 position-relative">
+                                                        <label class="input rounded w-100">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Catagory</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-md-6 position-relative">
+                                                        <label class="input rounded">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Sub
+                                                                Catagory</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-6 position-relative">
+                                                        <label class="input rounded">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Country</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-4">
+                                                    <div class="col-md-4 position-relative">
+                                                        <label class="input rounded">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Pricing
+                                                                Option</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4 position-relative">
+                                                        <label class="input rounded">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Pricing
+                                                                Form</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-md-4 position-relative">
+                                                        <label class="input rounded">
+                                                            <input
+                                                                class="input__field border border-secondary border-2 rounded w-100"
+                                                                type="text" placeholder=" ">
+                                                            <span
+                                                                class="span input__label  position-absolute f12Cgray">Price
+                                                                To</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-md-5 pt-md-5">
+                                                <div class="col-md-6">
+                                                    <button type="button" class="btn cancel text-darkblue w-100"
+                                                        data-bs-dismiss="offcanvas" aria-label="Close">CANCEL</button>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <button type="button"
+                                                        class="btn bg-blue text-white w-100">SEARCH</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="file me-md-3 bg-white rounded shadow1">
+                                    <button class="btn" type="button">
+                                        <i class="bi bi-filetype-xml fs-5"></i>
+                                    </button>
+
+                                </div>
+                                <div class="Add  shadow1">
+                                    <a class="btn add" href="./Product-Management-Add.html" role="button">ADD
+                                        PRODUCTS</a>
+                                </div>
+                            </div>
+                </div>
+                </div>
+                <table class="table m-0 rounded">
+                            <thead class="table border-2 border-end-0 border-start-0 text-center bg-light">
+                                <tr>
+                                    <th class="width20 text-uppercase f14Cgray py-3 text-start">Product name</th>
+                                    <th class="width40 text-uppercase f14Cgray py-3 text-center">Benifit type</th>
+                                    <th class="width20 text-uppercase f14Cgray py-3 text-center">Catagory</th>
+                                    <th class="width20 text-uppercase f14Cgray py-3 text-center">subCatagory</th>
+                                    <th class="width20 text-uppercase f14Cgray py-3 text-center">pricing option</th>
+                                    <th class="width20 text-uppercase f14Cgray py-3 text-center">price</th>
+                                    <th class="width20 text-uppercase f14Cgray py-3 text-center">actions</th>
+        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cardText14 text-start">
+                                        <span class="span fs14Blue fw-bold">Childcare Voucher</span><br>
+                                        <span class="span f12Cgray">World First-US</span>
+                                    </td>
+                                    <td class=" text-center py-3 f14Cgray">Employee pays Provider</td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Welbeing</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">Group lllness</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% of salary</span></td>
+                                    <td class=" text-center py-3 f14Cgray"> <span class="span">% 2500</span></td>
+                                    <td class=" text-center">
+                                        <span class="span f14Cgray">
+                                            <a class=" btn" href="./Product-Management-Add.html"><img src="./imgs/edit1.svg"
+                                                    class="darkBlue2 rounded p-2" alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/view.svg" class="darkBlue2 rounded p-2"
+                                                    alt=""></a>
+                                            <a class=" btn" href="#"><img src="./imgs/delete.svg" class="darkBlue2 rounded p-2"
+                                                    data-bs-toggle="modal" data-bs-target="#smallModal"></a>
+                                            <!-- Modal -->
+                                            <div id="smallModal" class="modal fade" tabindex="-1" role="dialog">
+                                                <div class="modal-dialog modal-sm modal-dialog-centered">
+                                                    <div class="modal-content modal-content-width">
+                                                        <div class="modal-body text-center">
+                                                            <div class="ad fw-600">Do You Really Want To Delete This Record ?
+                                                            </div>
+                                                            <div> <small class="mute text-center">You can not umdo this
+                                                                    action</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer justify-content-evenly">
+                                                            <button type="button" class="btn cancel text-darkblue"
+                                                                data-bs-dismiss="modal">CANCEL</button>
+                                                            <button type="button" class="btn bgRed text-white">DELETE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                </table>
+                <!-- table end -->
+                <div class="row">
+                    <div class="bg-transparent d-flex justify-content-between align-items-center rounded mt-4">
+                        <div class="offset-3 col-md-3 text-end">
+                            <span class="span f14Cgray">Items per page: </span>
+                        </div>
+                        <div class="col-md-1">
+                            <span class="span f14Cgray">
+                                <select class="form-select form-select-sm bg-transparent"
+                                    aria-label=".form-select-sm example">
+                                    <option selected="">10</option>
+                                    <option value="1">20</option>
+                                    <option value="2">30</option>
+                                    <option value="3">40</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="col-md-5">
+                            <a class="me-2 f16Cgray text-decoration-none" href="#"><i
+                                    class="bi bi-chevron-double-left"></i></a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#"><i
+                                    class="bi bi-chevron-left"></i></a>
+                            <a class="me-2 fs16Blue text-decoration-none" href="#">1</a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#">2</a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#">3</a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#">4</a>
+                            <a class="mx-3 f16Cgray text-decoration-none" href="#">...</a>
+                            <a class="mx-3 f16Cgray text-decoration-none" href="#">8</a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#">9</a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#">10</a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#"><i
+                                    class="bi bi-chevron-right"></i></a>
+                            <a class="me-2 f16Cgray text-decoration-none" href="#"><i
+                                    class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+            <!-- Optional JavaScript; choose one of the two! -->
+
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+                    -->
+</body>
+
+</html>

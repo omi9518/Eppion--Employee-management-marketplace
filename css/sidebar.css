@@ -1,0 +1,43 @@
+
+.offcanvas {
+    width: 80px !important;
+}
+
+.offcanvas.offcanvas-start {
+    transform: none;
+    visibility: visible !important;
+}
+
+.offcanvas.show {
+    width: 300px !important;
+}
+
+.offcanvas-body {
+    overflow: hidden !important;
+}
+.lLogo {
+    display: none;
+}
+.show .list-group-item .lLogo {
+    display: inline-block;
+}
+.show .list-group-item .nLogo{
+    display: none;
+}
+span {
+    display: none;
+}
+
+.show + #main {
+    margin-left: 300px;
+}
+
+#main {
+    margin-left: 80px;
+    transition: .3s ease-in-out;
+    background-color: #F4F5Fa;
+}
+
+.show .list-group-item span {
+    display: inline-block;
+}
